@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Markazi+Text');
+body {
+    font-family: Markazi Text;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    /*    background: rgba(34, 34, 34, 0.7);*/
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    background: rgba(34, 34, 34, 0.7);
+    background-blend-mode: darken;
+    padding: 20px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    position: relative;
+    left: -50%;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+    font-size: 25px;
+}
+
+/*при наведенні міняється колір*/
+
+nav a:hover {
+    color: #f4df42;
+}
+
+.logo {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.logo:hover{
+    -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/*колір значків соцмереж*/
+
+/*
+div a {
+    color: black;
+}
+*/
+
+/*значки міняють клір при наведенні*/
+
+div a:hover {
+    color: #f4df42;
+}
+
+/*верх бар*/
+
+/*header {*/
+
+border: 1px solid #111;
+color: black;
+background: rgba(34,
+34,
+34,
+0.7);
+top: 0px;
+padding-top: auto;
+padding-bottom: auto;
+margin-left: -8px;
+width: 100%;
+position: fixed;
+z-index: 1;
+grid-area: header;
+}
+
+/*.content{*/
+
+flex-grow: 1;
+}
+
+/*шапка*/
+
+/*righ {*/
+
+color: #444;
+margin-top: -27px;
+padding-top: 148px;
+margin-bottom: -10px;
+margin-left: -8px;
+margin-right: -10px;
+grid-area: righ;
+font-family: Cinzel;
+text-align: center;
+font-size: 70px;
+background: url(img/flat,1000x1000,075,f.jpg) repeat-x;
+background-size: 1300px;
+background-position: center;
+background-color: rgba(0,
+0,
+0,
+0.9);
+background-blend-mode: darken;
+}
+
+
+/*
+.grid {
+    display: grid;
+            grid-gap: 5px;
+    grid-template-areas: "header" "righ" "gallery" "cont" "info" "footer";
+}
+*/
+
+/*cont {*/
+
+background-color: orangered;
+border: 1px solid red;
+margin-top: 60px;
+border-radius: 5px;
+font-size: 20px;
+grid-area: cont;
+}
+
+/*галерея свйту*/
+
+/*gallery {*/
+
+background-color: orangered;
+border: 1px solid red;
+margin-top: 60px;
+border-radius: 5px;
+font-size: 20px;
+grid-area: gallery;
+height: 150px;
+position: relative;
+box-sizing: border-box;
+}
+
+/*інформаційна частина*/
+
+/*info {*/
+
+background-color: #f4df42;
+font-size: 20px;
+grid-area: info;
+color: black;
+margin-top: 74px;
+margin-bottom: -34px;
+padding-bottom: 34px;
+padding-top: 10px;
+height: 300px;
+margin-left: -8px;
+margin-right: -10px;
+font-weight: 700;
+background-position: center 80px;
+}
+
+/*підвал*/
+
+/*footer {*/
+
+/*    grid-area: footer;*/
+
+/*    position: absolute;*/
+
+/*    display: block;*/
+
+/*    color: #444;*/
+
+/*    margin-top: 34px;*/
+
+/*    margin-bottom: -1015px;*/
+
+/*    padding-bottom: 34px;*/
+
+/*    padding-top: 30px;*/
+
+/*    margin-left: -8px;*/
+
+/*    margin-right: -10px;*/
+
+/*    font-family: Cinzel;*/
+
+/*    width: 100%*/
+
+/*     border: 1px solid #111;*/
+
+/*    color: black;*/
+
+/*    background: rgba(34, 34, 34, 0.7);*/
+
+/*    bottom: 0px;*/
+
+/*    left: 0px;*/
+
+/*    padding-top: auto;*/
+
+/*    padding-bottom: auto;*/
+
+/*    margin-left: -8px;*/
+
+/*    min-width: 100%;*/
+
+/*    position: fixed;*/
+
+/*    z-index: 1;*/
+
+/*
+    background-color: rgba(0, 0, 0, 0.9);
+    background-blend-mode: darken;
+*/
+
+/*    font-weight: 700;*/
+
+/*    background-position: center 80px;*/
+
+/*
+    background: url(img/images.png) no-repeat;
+    background-size: 300px;
+    background-position: left;
+*/
+
+/*
+     background-color: rgba(0, 0, 0, 0.9);
+    background-blend-mode: darken;
+*/
+
+/*}*/
+
+/*розміщення списку в верх барі*/
+
+/*ul li {*/
+
+/*
+    display: inline;
+    padding: 100px;
+    font-size: 35px;
+}
+*/
+
+/*розміщення силок в верх барі*/
+
+/*
+@media(min-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "header header" "righ righ" "cont cont" "gallery gallery" "info info" "footer footer"
+    }
+}
+*/
+
+/*::-webkit-scrollbar{*/
+
+width:1px;
+height:0px;
+}
+
+/*::-webkit-scrollbar-button{*/
+
+width:1px;
+height:0px;
+}
+
+/*.horizontal-scroll-wrapper{*/
+
+/*  position:absolute;*/
+
+/*    z-index: 0;*/
+
+/*    opacity: inherit;*/
+
+/*  display:block;*/
+
+/*    overflow: hidden;*/
+
+/*  top:0;*/
+
+/*  left:auto;*/
+
+/*  width:80px;*/
+
+/*  max-height:100%;*/
+
+/*  margin:0;*/
+
+/*  background:#abc;*/
+
+overflow-y:auto;
+overflow-x:hidden;
+transform:rotate(-90deg) translateY(-80px);
+/*  transform-origin:right top;*/
+
+/*    display: inline;*/
+
+/*    */
+
+/*    background-color: orangered;*/
+
+/*    border: 1px solid red;*/
+
+/*    padding-bottom: 500px;*/
+
+/*    background-position: center;*/
+
+/*    border-radius: 5px;*/
+
+/*    font-size: 20px;*/
+
+/*    grid-area: gallery;*/
+
+/*    width: 500px;*/
+
+height: 150px;
+width: auto;
+/*    box-sizing: border-box;*/
+
+}
+
+/*.horizontal-scroll-wrapper img{*/
+
+width: auto;
+height: 60px
+}
+
+/*.horizontal-scroll-wrapper > div{*/
+
+/*  display:block;*/
+
+/*    top:;*/
+
+padding:5px;
+/*  background:#f4df42;*/
+
+/*    display: inline;*/
+
+transform:rotate(90deg);
+/*  transform-origin: right top;*/
+
+}
+
+/*.rectangles{*/
+
+/*  top: 400px;*/
+
+padding:200px;
+}
+
+/*.rectangles > div{*/
+
+width:140px;
+height:60px;
+margin:50px;
+padding:5px;
+background:#f4df42;
+transform:rotate(90deg) translateY(80px);
+/*  transform-origin: right top;*/
+
+}
