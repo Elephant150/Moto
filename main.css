@@ -1,27 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Markazi+Text');
+
 * {
     margin: 0;
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Cinzel|Markazi+Text');
 body {
     font-family: Markazi Text;
+/*    position: absolute;*/
+    /*
     display: flex;
     flex-direction: column;
+*/
 }
 
-#header {
-    /*    background: rgba(34, 34, 34, 0.7);*/
-    margin: 0;
-}
 
 nav {
+    position: fixed;
     width: 100%;
     background: rgba(34, 34, 34, 0.7);
     background-blend-mode: darken;
-    padding: 20px;
+    padding: 23px;
     margin: 0 auto;
     font-weight: bold;
+    z-index: 100;
 }
 
 nav ul {
@@ -41,7 +43,7 @@ nav ul li a {
     text-decoration: none;
     color: black;
     margin-right: 50px;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 /*при наведенні міняється колір*/
@@ -57,10 +59,129 @@ nav a:hover {
     transition: all 0.3s ease;
 }
 
-.logo:hover{
+.logo:hover {
     -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.topHead {
+    font-family: Cinzel;
+    width: 100%;
+    color: #777;
+    padding-top: 95px;
+    margin-top: -200px;
+    margin-bottom: -100px;
+}
+
+.topHead p {
+    font-size: 70px;
+    text-align: right;
+    width: 20%;
+    padding-top: 300px;
+    padding-left: 48%;
+}
+
+.backgroundTop {
+    background: url(img/Roads_2018_Husqvarna_Vitpilen_701_Motorcyclist_538874_4096x2731.jpg) no-repeat;
+    background-position: 40% 40%;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    background-size: cover;
+    height: 810px;
+}
+
+.about {
+    width: 100%;
+    color: #777;
+    padding-top: 100px;
+    margin-top: -5px;
+    /*    margin-bottom: 5px;*/
+    background: url(img/flat,1000x1000,075,f.jpg) repeat-x;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-blend-mode: darken;
+    background-size: 1300px;
+    height: 400px;
+}
+
+.about p{
+    padding-left: 65%;
+    padding-top: 3%;
+}
+
+.about h3{
+    font-size: 40px;
+    width: 50%;
+    padding-left: 10%;
+    padding-bottom: -33%;
+}
+
+/*
+.about img{
+    position: absolute;
+    margin-bottom: 25%;
+    margin-left: 0%;
+    margin-top: -6%;
+}
+*/
+/*
+
+.firstLayer{
+    margin-left: -10px; 
+    margin-top: 10px;
+    z-index: 2;
+}
+*/
+
+/*
+.about div{
+    padding-left: 0%;
+    margin-left: 65%;
+    margin-right: -60%;
+    margin-top: -18%;
+    margin-bottom: -17%;
+}
+*/
+
+.about ul{
+    list-style-type: none;
+}
+
+.about ul li{
+    float: right;
+    width: 80%;
+/*    font-size: 45px;*/
+/*    width: 25%;*/
+/*    display: inline;*/
+}
+
+.about ul li p{
+    margin-left: -80%;
+    font-size: 45px;
+    width:70%;
+    margin-bottom: -24%;
+}
+
+.about ul li img{
+    margin-left: 55%;
+/*    pad/ding-top: -20%;*/
+/*    margin-bottom:-6%;*/
+    border: 6px solid #f4df42;
+}
+
+.grid {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 100%;
+    /*    grid-template-rows: 600px;*/
+    /*
+    grid-template-areas: 
+        "top"
+        "about"
+        "gallery"
+        "pricing"
+        "contacts";
+*/
 }
 
 /*колір значків соцмереж*/
