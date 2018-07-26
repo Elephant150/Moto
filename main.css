@@ -7,12 +7,9 @@
 
 body {
     font-family: Markazi Text;
-    /*    position: absolute;*/
-    /*
-    display: flex;
-    flex-direction: column;
-*/
 }
+
+/*---header--------------------------*/
 
 nav {
     position: fixed;
@@ -51,6 +48,10 @@ nav a:hover {
     color: #f4df42;
 }
 
+/*-------------------------------*/
+
+/*-----logo heder-----------*/
+
 .logo {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -64,12 +65,16 @@ nav a:hover {
     transform: scale(1.2);
 }
 
+/*----------------------*/
+
+/*-----front picture-----*/
+
 .topHead {
     font-family: Cinzel;
     width: 100%;
     color: #777;
-    padding-top: 95px;
-    margin-top: -200px;
+    padding-top: 100px;
+    margin-top: -198px;
     margin-bottom: -100px;
 }
 
@@ -90,12 +95,15 @@ nav a:hover {
     height: 810px;
 }
 
+/*------------------------*/
+
+/*------about------*/
+
 .about {
     width: 100%;
     color: #777;
     padding-top: 100px;
     margin-top: -5px;
-    /*    margin-bottom: 5px;*/
     background: url(img/flat,1000x1000,075,f.jpg) repeat-x;
     background-color: rgba(0, 0, 0, 0.9);
     background-blend-mode: darken;
@@ -129,119 +137,151 @@ nav a:hover {
     border: 6px solid #f4df42;
 }
 
+/*------------------------*/
+
+/*-----gellery------*/
+
+.outsideGallery {
+    background: url(img/grey-wallpapers-25229-9791358.jpg) no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-position: 50% 80%;
+    background-blend-mode: darken;
+    background-size: cover;
+    height: 460px;
+    padding-top: 30px;
+}
+
 .gallery {
+    z-index: 1;
     height: 400px;
-    width: 100%;
-/*    background-position: center*/
+    width: 80%;
+    border-radius: 5px;
+    padding-top: 10px;
     padding-left: 7%;
     padding-top: 1%;
     padding-bottom: 1%;
     overflow: scroll;
-/*    padding-right: 20%;*/
-    background-color: #f4df42;
-/*    padding-right: */
-           margin: 0 auto;
-/*    float: right;*/
-/*    font-weight: 600;*/
-/*    display: block;*/
-
+    background: rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
 }
 
-.gallery img {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+.boxShadow {
+    z-index: 0;
+    -webkit-box-shadow: inset 0 0 200px #222;
+    -moz-box-shadow: inset 0 0 200px #222;
+    box-shadow: inset 0 0 200px #222;
 }
 
-.gallery img:hover {
-    -webkit-transform: scale(4);
-    -ms-transform: scale(4);
-    transform: scale(4);
+/*pressed style*/
+
+.pressed {
+    padding: 20px;
+    margin-left: -9%;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #222;
+    background: rgba(24, 24, 24, 0.6);
+    border: 2px solid #111;
+    border-right: 1px solid #353535;
+    border-bottom: 1px solid #353535;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
-.galleryBox{
+/*------zoom photo----------------*/
+
+img[tabindex="0"] {
+    cursor: zoom-in;
+    cursor: pointer;
+}
+
+img[tabindex="0"]:focus {
+    position: fixed;
+    z-index: 10;
+    top: 15%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    min-width: 60%;
+    min-height: 60%;
+    margin: auto;
+    box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(0, 0, 0, 0.7);
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+}
+
+img[tabindex="0"]:hover {
+    transition: all 2s ease-out;
+}
+
+img[tabindex="0"]:focus,
+img[tabindex="0"]:focus * {
+    pointer-events: none;
+    cursor: zoom-out;
+}
+
+/*----------------------*/
+
+/*grid photo gallery*/
+
+.galleryBox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
 }
 
-/*
-.gallery ul{
-    width: 100%;
-    overflow: hidden;
-    overflow: auto;
-}
-*/
-.gallery li{
+.gallery li {
     list-style-type: none;
 }
-/*
 
-.parent {
-    width: 95%;
-    height:140px;
-    overflow: hidden;
-    overflow-x: scroll;
-    background: yellow;
-    white-space:nowrap;
-     overflow-y: scroll;
-    overflow-x: scroll;
-}
-*/
-
-/*
-.child {
-    display: inline-block;
-    vertical-align: top;
-    width: 250px;
-    height: 100px;
-    background: red;
-}
-*/
-
-/*
-
-.horizontal-scroll-wrapper {
-    width: 150px;
-    height: 300px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transform: rotate(-90deg); 
-    background-color: #222;
-    transform-origin: right top;
-}
-
-.horizontal-scroll-wrapper div {
-    width: -700px;
-    height: 100px;
-    transform: rotate(90deg);
-    transform-origin: right top;
-    box-sizing: border-box;
-}
-*/
-
-/*
-.rectangles {
-    top: 100px;
-    padding: 0px 0 100px 120px;
-}
-*/
-
-/*.rectangles div {*/
-/*    width: 100px;*/
-/*
-    height: 125px;
-    margin: 140px 60px;
-    padding: 5px;
-*/
-/*    transform: rotate(90deg) translateY(20px);*/
-/*    transform-origin: right top;*/
-/*}*/
+/*ховає скрол*/
 
 ::-webkit-scrollbar {
     display: none;
 }
+
+/*------------------------*/
+
+/*-----pricing-----*/
+
+.pricing {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.first {
+    border: 1px solid #444;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.second {
+    border: 1px solid #444;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.third {
+    border: 1px solid #444;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.pricingBpx {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10px;
+}
+
+/*------------------------*/
+
+/*-----загальний грід----*/
+
 .grid {
     display: grid;
     grid-template-columns: 100%;
@@ -255,6 +295,8 @@ nav a:hover {
         "contacts";
 */
 }
+
+/*------------------------*/
 
 /*колір значків соцмереж*/
 
