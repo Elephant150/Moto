@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel|Markazi+Text');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Rokkitt');
 
 * {
     margin: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Markazi Text;
+    font-family: Rokkitt;
 }
 
 /*---header--------------------------*/
@@ -14,7 +14,7 @@ body {
 nav {
     position: fixed;
     width: 100%;
-    background: rgba(34, 34, 34, 0.7);
+    background: rgba(34, 34, 34, 0.8);
     background-blend-mode: darken;
     padding: 23px;
     margin: 0 auto;
@@ -39,7 +39,7 @@ nav ul li a {
     text-decoration: none;
     color: black;
     margin-right: 50px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 /*при наведенні міняється колір*/
@@ -83,7 +83,7 @@ nav a:hover {
     text-align: right;
     width: 20%;
     padding-top: 300px;
-    padding-left: 48%;
+    padding-left: 38%;
 }
 
 .backgroundTop {
@@ -92,7 +92,7 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
     background-size: cover;
-    height: 810px;
+    height: 848px;
 }
 
 /*------------------------*/
@@ -103,7 +103,7 @@ nav a:hover {
     width: 100%;
     color: #777;
     padding-top: 100px;
-    margin-top: -5px;
+    margin-top: -40px;
     background: url(img/flat,1000x1000,075,f.jpg) repeat-x;
     background-color: rgba(0, 0, 0, 0.9);
     background-blend-mode: darken;
@@ -149,6 +149,7 @@ nav a:hover {
     background-size: cover;
     height: 460px;
     padding-top: 30px;
+    margin-top: -8px;
 }
 
 .gallery {
@@ -252,27 +253,83 @@ img[tabindex="0"]:focus * {
     text-align: center;
     font-size: 30px;
     padding: 20px;
+    height: 450px;
 }
 
 .first {
     border: 1px solid #444;
     margin-right: 5%;
     margin-left: 5%;
+    border-radius: 5px;
+    /*    background-color: #999;*/
+    -webkit-box-shadow: inset 0 0 200px #222;
+    -moz-box-shadow: inset 0 0 200px #222;
+    box-shadow:  0 0 200px #222;
+    
 }
 
 .second {
     border: 1px solid #444;
     margin-right: 5%;
     margin-left: 5%;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 200px #222;
+    -moz-box-shadow: inset 0 0 200px #222;
+    box-shadow:  0 0 200px #222;
 }
 
 .third {
     border: 1px solid #444;
     margin-right: 5%;
     margin-left: 5%;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 200px #222;
+    -moz-box-shadow: inset 0 0 200px #222;
+    box-shadow:  0 0 200px #222;
 }
 
-.pricingBpx {
+h3 {
+    background-color: #222;
+    color: #f4df42;
+    margin-top: 3%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.center {
+    margin-bottom: 3%;
+    margin-top: 3%;
+    font-size: 35px;
+    color: #444;
+}
+
+button {
+    color: #f4df42;
+    background-color: #222;
+    height: 35px;
+    width: 90px;
+    border: 1px solid #f4df42;
+    border-radius: 2px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    -webkit-box-shadow: 0 0 10px #111;
+    -moz-box-shadow: 0 0 10px #111;
+    box-shadow: 0 0 10px #111;
+}
+
+button:hover {
+    color: #222;
+    background-color: #f4df42;
+    border: 1px solid #222;
+}
+
+p {
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.pricingBox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 10px;
