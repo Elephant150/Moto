@@ -7,6 +7,18 @@
 
 body {
     font-family: Rokkitt;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex-grow: 1;
+}
+
+/*значки міняють клір при наведенні*/
+
+div a:hover {
+    color: #f4df42;
 }
 
 /*---header--------------------------*/
@@ -351,9 +363,19 @@ h3 {
 
 .contacts input {
     height: 20px;
-    width: 200px;
+    width: 220px;
     padding-top: 0.2%;
     border-radius: 5px;
+    -webkit-border-radius: 3px; 
+   -moz-border-radius: 3px;
+   -khtml-border-radius: 3px;
+     outline: none;
+    background: #ffffff !important;
+    color: #222;
+    font-size: 20px;
+    font-family: Rokkitt;
+    border: 1px solid #222;
+    background: url(images/video.png) no-repeat 50% 50%;
 }
 
 .contacts button {
@@ -375,6 +397,30 @@ h3 {
     color: #222;
     background-color: #f4df42;
     border: 1px solid #222;
+}
+
+/*------------------------*/
+
+/*-------footer------*/
+
+.footer{
+    height: 100px;
+    background: rgba(34, 34, 34, 0.8);
+    background-blend-mode: darken;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 8px;
+/*
+    padding-bottom: 5px;
+    padding-top: 5px;
+*/
+}
+.footer p{
+    font-size: 15px;
+}
+
+.footer a {
+    color:  black;
 }
 
 /*------------------------*/
@@ -405,11 +451,7 @@ div a {
 }
 */
 
-/*значки міняють клір при наведенні*/
 
-div a:hover {
-    color: #f4df42;
-}
 
 /*верх бар*/
 
